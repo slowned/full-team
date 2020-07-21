@@ -1,7 +1,7 @@
 from matches.models import Match
 from rest_framework import serializers
 
-from players.models import Player
+from players.models import PlayerProfile
 
 
 class MatchSerializer(serializers.ModelSerializer):
