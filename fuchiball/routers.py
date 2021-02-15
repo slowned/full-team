@@ -6,5 +6,4 @@ from players.views import PlayerViewSet
 router = routers.DefaultRouter()
 
 router.register(r'player', PlayerViewSet)
-router.register(r'players', PlayerViewSet)
-router.register(r'matches', MatchViewSet)
+router.register(r'match', MatchViewSet)

@@ -9,7 +9,7 @@ class Match(models.Model):
     end = models.DateTimeField()
     capacity = models.IntegerField()  # choice field 5, 7, 9, 11
     price = models.DecimalField(max_digits=10, decimal_places=2, default=0)  # amount ?
-    # players = models.ManyToManyField('player.PlayerProfile')
+    players = models.ManyToManyField(PlayerProfile)
 
     def __str__(self):
         return 'Dia: {}, Hora: {}'.format(self.start, self.end)
